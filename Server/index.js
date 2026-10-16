@@ -18,14 +18,27 @@ const myServer = http.createServer((req,res) => {
 myServer.listen(8000, () => console.log("Server started"))
 
 
+const http1 = require("http")
+
+const server = http.createServer((req,res) => {
+    console.log(res)
+    res.end("hello from server ")
+})
+
+server.listen(4000, () => console.log("server started on port 4000")
 
 
 
+const http2 = require("http")
+
+const server3 = http.createServer((req,res) => {
+    console.log(res)
+    res.end("hello from server 3")
+
+server3.listen(5000,() => console.log("server started on port 5000"))
 
 
-
-
-
+})
 
 
 
