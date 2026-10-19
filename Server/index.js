@@ -7,38 +7,33 @@ const http = require("http")
 //callback kay pas do parameter hotay req or res 
 //jab bhi koi call ati hai ya koi requet ati hai to infuction ko run krae ga
 //ab is server ko run krnay kay liye hma ik port ki zaroort parti hai port  number ki
-
+const fs= require("fs")
 const myServer = http.createServer((req,res) => {
-    console.log(res)
-        res.end("hello from server again")
-    }); ``
+    const log=`${Date.now()}: ${req.url}New Req Received\n`;
+    fs.appendFile("log.txt", log,(err,data) => {
+        switch(req.url){
+            case "/":
+              res.end("Homepage");
+            break
+            case "/about":
+                res.end("I am ebadurrehman")
+            break
+            default:
+                res.end("404 Not Found")
+        }
+        
+
+    }); 
+})
    //console.log("New req rec.");
     //console.log("req.headers")
     //res.end("hello from Server")
 myServer.listen(8000, () => console.log("Server started"))
 
 
-const http1 = require("http")
-
-const server = http.createServer((req,res) => {
-    console.log(res)
-    res.end("hello from server ")
-})
-
-server.listen(4000, () => console.log("server started on port 4000")
 
 
 
-const http2 = require("http")
-
-const server3 = http.createServer((req,res) => {
-    console.log(res)
-    res.end("hello from server 3")
-
-server3.listen(5000,() => console.log("server started on port 5000"))
-
-
-})
 
 
 
