@@ -22,4 +22,4 @@ const otherserver = http.createServer((req,res) => {
         }
     })
 })
-otherserver.listen(4000,() => console.log("server started on port 4000"))
+otherserver.listen(4000,() =>("server started"))
