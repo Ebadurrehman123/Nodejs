@@ -1,0 +1,9 @@
+client sent req to server and server get respose to the client
+
+restapi work on server and client architecture
+means server ik different machine hai
+client ik diff machine hai
+dono ko ik dusra ka upper dependent nia hona chaie
+respose ik text hoskta hai ik document hoskta hai ik json file hoskti hai
+
+exam
