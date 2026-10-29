@@ -28,7 +28,9 @@ app
 })
 app.post("/api/users",(req,res) => {
     //create new user
-    return res.json({status:"pending"});
+    const body = req.body;
+    console.log('Body'.body);
+    return res.json({status:"pending"})
 })
 
 app.get('/users',(req,res) =>{
