@@ -5,6 +5,7 @@ const app = express();
 const PORT = 8000;
 
 //middleware -plugin
+//jab bhi kai form data ai ga us ko meri body ma daal nay ka kaam krai ga
 app.use(express.urlencoded({extended:false}))
 //ROUTES
 app.get('/api/users',(req,res) =>{

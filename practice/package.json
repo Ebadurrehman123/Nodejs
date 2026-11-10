@@ -18,7 +18,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node middleware.js"
   },
   "dependencies": {
     "accepts": "^2.0.0",
